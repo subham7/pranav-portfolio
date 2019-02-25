@@ -17,6 +17,10 @@ app.get("/", (req, resp) => {
   resp.sendFile(path.join(__dirname, "public", "index.html"))
 })
 
+app.get("/test", (req, resp) => {
+  resp.sendFile(path.join(__dirname, "public", "index1.html"))
+})
+
 app.listen(port, () => {
   console.log(`Server started at ${port}`)
 })
