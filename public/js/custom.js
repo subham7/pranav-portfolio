@@ -111,6 +111,11 @@ $(document).ready(function() {
     "#w1,#w2,#w3,#w4,#w5,#w6,#w7,#w8,#w9,#w10,#w11,#w12,#w13,#w14,#w15,#w16,#w17,#w18,#w19"
   ).animatedModal()
 
+  $(".portfolio_item").click(function() {
+    $(".modal-content").removeClass("model-active")
+    $("#model" + $(this).data("id")).addClass("model-active")
+  })
+
   // Contact Form
 
   // validate contact form
