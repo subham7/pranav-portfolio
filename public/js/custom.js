@@ -112,6 +112,8 @@ $(document).ready(function() {
   ).animatedModal()
 
   $(".portfolio_item").click(function() {
+    console.log($(this).data("id"))
+
     $(".modal-content").removeClass("model-active")
     $("#model" + $(this).data("id")).addClass("model-active")
   })
